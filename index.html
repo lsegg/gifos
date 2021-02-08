@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>GIFOS</title>
+    </head>
+    <body>
+        <header>
+            <img src="imgs/logo-mobile.svg" alt="Logo GIFOS" id="logo-mobile"/>
+            <nav>
+                <img
+                    src="imgs/burger.svg"
+                    alt="Icono menu hamburguesa"
+                    aria-label="Menu de navegacion"
+                    id="burger"
+                />
+                <div>
+                    <ul>
+                        <li>
+                            <a href=""> Modo Nocturno </a>
+                        </li>
+                        <li>
+                            <a href=""></a> Favoritos </a>
+                        </li>
+                        <li>
+                            <a href=""> Mis GIFOS </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="search">
+                <h1>
+                    Inspírate, busca, guarda y crea los mejores
+                    <span class="color-secondary">GIFOS</span>
+                </h1>
+                <img
+                    src="imgs/ilustra_header.svg"
+                    alt="Illustration of three people"
+                    id="ilustra"
+                />
+                <div id="container-search">
+                    <form action="">
+                        <label for="q" aria-label="Entrada de busqueda"></label>
+                        <input
+                            type="text"
+                            name="q"
+                            id="q"
+                            placeholder="Busca GIFOS y más"
+                        />
+                    </form>
+                    <img src="/imgs/icon-search.svg" alt="Icono de lupa" id="icon-search" />
+                </div>
+                <h3>Trending:</h3>
+                <p>Reactions, Entertainment, Sports, Stickers, Artist</p>
+            </section>
+            <section class="trending">
+                <h2>Trending GIFOS</h2>
+                <p>Mira los últimos<br>GIFOS de nuestra comunidad</p>
+                <div class="carrousel">
+                    <img src="https://via.placeholder.com/243x187/" alt="">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Compartir en:</p>
+            <div class="social-networks">
+                <img src="imgs/icon_facebook.svg" alt="Icono de facebook" />
+                <img src="imgs/icon-twitter.svg" alt="Icono de twitter" />
+                <img src="imgs/icon_instagram.svg" alt="Icono de Instagram" />
+            </div>
+            <p class="copyright">&copy; GIFOS 2021 All Rights Reserved.</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

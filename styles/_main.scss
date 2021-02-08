@@ -1,0 +1,73 @@
+main {
+    text-align: center;
+    h1 {
+        font-family: $font-primary;
+        font-size: 1.5625rem;
+        line-height: 2.0625rem;
+        color: $color-primary;
+        margin: 7px 44px 31px 45px;
+        span {
+            color: $color-secondary;
+        }
+    }
+    #ilustra {
+        width: 273px;
+        margin-bottom: -4px;
+    }
+    #container-search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        margin: 0 21px 0 20px;
+        border: 1px solid $color-primary;
+        border-radius: 27px;
+        form {
+            width: 215px;
+            margin-left: 55px;
+            text-align: left;
+            ::placeholder {
+                font-size: 1rem;
+                font-family: $font-secondary;
+            }
+        }
+        #icon-search {
+            margin-right: 20px;
+        }
+
+    }
+    h3 {
+        margin: 31px 69px 2px 70px;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5625rem;
+        color: $color-primary;
+    }
+    .search p {
+        margin: 0 75px 45px 75px;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.5625rem;
+        color: $color-primary;
+    }
+    .trending {
+        background-color: $color-trending;
+    }
+    h2 {
+        padding-top: 46px;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: $color-primary;
+    }
+    .trending p {
+        margin-top: 7px;
+        font-family: $font-secondary;
+        font-size: 1rem;
+        line-height: 1.4375rem;
+        color: $color-black;
+    }
+    .carrousel {
+        padding: 32px 0 82px 0;
+    }
+}
