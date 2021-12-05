@@ -1,0 +1,21 @@
+.Header {
+  border-top: 5px solid $color-primary;
+  &-navbar {
+    align-items: center;
+    display: flex;
+    height: toRem(95px);
+    justify-content: space-between;
+    &-logo-container {
+      margin-left: toRem(22px);
+    }
+    &-menu {
+      &-button {
+        margin-right: toRem(26px);
+      }
+      &-item {
+        display: none; // temporary
+        list-style: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// fonts
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+// colors
+$color-primary: hsl(253, 78%, 54%);
+$color-secondary: hsl(167, 72%, 60%);
+$color-light: hsl(0, 0%, 100%);
+$color-dark: hsl(0, 0%, 0%);
+$color-background: hsl(216, 26%, 96%);
+
+// default px-size
+$root-font-size: 16px;
+
+// px to rems
+@function toRem($value) {
+  $remValue: ($value / $root-font-size) + rem;
+  @return $remValue;
+}
+
+// breakpoints
+$breakpoint-mobile: toRem(320px);
+$breakpoint-sm-tablet: toRem(768px);
+$breakpoint-lg-tablet: toRem(1024px);
+$breakpoint-desktop: toRem(1440px);
