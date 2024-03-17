@@ -55,4 +55,8 @@
       text-align: left;
     }
   }
+  &-trending {
+    // Box Model
+    margin-top: toRem(31px);
+  }
 }
