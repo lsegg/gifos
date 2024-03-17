@@ -1,6 +1,6 @@
 # GIFOS
 
-This a project from a course I'm taking, Desarrollo Web Full Stack by Acámica. The challenge is to create an interactive web application to share animated GIFs, putting into practice the fundamentals of programming and using JavaScript by obtaining data from the API of Giphy.com working with asynchronism and taking advantage of native browser tools such as obtaining images through the webcam.
+This is the second project from the Web Full Stack Development intensive programme by Acámica. The challenge was to create an interactive web application to share animated GIFs, putting into practice the fundamentals of programming and using JavaScript by obtaining data from the API of Giphy.com working with asynchronism and taking advantage of native browser tools such as obtaining images through the webcam.
 
 ## Built with 🛠️
 
