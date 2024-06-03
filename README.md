@@ -40,6 +40,10 @@ This is the second project from the Web Full Stack Development intensive program
 
 ## Requirements ⚙️
 
+- A text editor like Visual Studio Code.
+- A development local server such as Live Server.
+- A [Giphy Developers](https://developers.giphy.com/) account.
+
 ## License 📄
 
 This project is under (MIT License) - See the file [LICENSE](LICENSE) for more details
