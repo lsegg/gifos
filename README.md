@@ -7,6 +7,7 @@ This is an interactive web application to share animated GIFs based on a practis
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Stylesheet language.
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Markup language.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language.
+- [Jest](https://jestjs.io/) - JavaScript Testing Framework.
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [Vite](https://vitejs.dev/) - Frontend build tool.
 
