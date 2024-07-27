@@ -13,6 +13,28 @@ This is an interactive web application to share animated GIFs based on a practis
 
 ## Features 📋
 
+- Mobile first.
+- Responsive views:
+  - mobile
+  - small tablets
+  - large tablets
+  - and desktop
+- Units criteria:
+  - _px_ for font root element and borders,
+  - _%_ and _rem_ for the rest.
+- Naming criteria:
+  - `.TitleCase` modules
+  - `-camelCase` elements
+  - `--camelCase` modifiers
+- Properties order criteria: grouped by type as follows -->
+  - Inheritance
+  - Layout
+  - Box Model
+  - Visual Properties
+  - Typography
+  - Animations
+  - Others
+
 ## Previews
 
 ### Desktop

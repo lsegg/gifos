@@ -1,0 +1,42 @@
+.Footer {
+  // Layout
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  // Box model
+  width: 100%;
+  // Visual properties
+  border-bottom: 5px solid $color-primary;
+  &-social {
+    // Layout
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // Box model
+    width: 100%;
+    &-text {
+      // Box model
+      margin-bottom: toRem(24px);
+    }
+    &-network {
+      // Layout
+      display: flex;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      // Box model
+      max-width: toRem(140px);
+    }
+    &-icon {
+      // Box model
+      margin: 0 toRem(10px) 0;
+    }
+  }
+  &-copyright {
+    // Box model
+    margin: toRem(46px) 0 toRem(23px);
+  }
+}
