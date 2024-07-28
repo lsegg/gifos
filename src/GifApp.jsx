@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./components/Header";
 import AddCategory from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 import Footer from "./components/Footer";
@@ -13,12 +14,12 @@ const GifApp = () => {
 
   return (
     <>
-      <h1>GifApp</h1>
+      <Header />
       <main className="Main">
-        <AddCategory onNewCategory={handleAddCategory} />
+        {/* <AddCategory onNewCategory={handleAddCategory} />
         {categories.map((category) => (
           <GifGrid key={category} category={category} />
-        ))}
+        ))} */}
       </main>
       <Footer />
     </>
