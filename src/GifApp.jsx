@@ -16,10 +16,10 @@ const GifApp = () => {
     <>
       <Header />
       <main className="Main">
-        {/* <Search onNewCategory={handleSearch} />
+        <Search onNewCategory={handleSearch} />
         {categories.map((category) => (
           <GifGrid key={category} category={category} />
-        ))} */}
+        ))}
       </main>
       <Footer />
     </>
