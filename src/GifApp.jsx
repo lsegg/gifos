@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { AddCategory, GifGrid } from "./components";
+import AddCategory from "./components/AddCategory";
+import GifGrid from "./components/GifGrid";
 
-export const GifApp = () => {
+const GifApp = () => {
   const [categories, setCategories] = useState(["One Punch"]);
 
   const handleAddCategory = (newCategory) => {
@@ -21,3 +22,5 @@ export const GifApp = () => {
     </>
   );
 };
+
+export default GifApp;
