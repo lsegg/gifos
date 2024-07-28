@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PropTypes } from "prop-types";
 
-const AddCategory = ({ onNewCategory }) => {
+const Search = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -28,8 +28,8 @@ const AddCategory = ({ onNewCategory }) => {
   );
 };
 
-AddCategory.propTypes = {
+Search.propTypes = {
   onNewCategory: PropTypes.func.isRequired,
 };
 
-export default AddCategory;
+export default Search;

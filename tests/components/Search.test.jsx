@@ -1,11 +1,11 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import AddCategory from "../../src/components/AddCategory";
-describe("AddCategory", () => {
+import Search from "../../src/components/Search";
+describe("Search", () => {
   const func = () => {}; // If I just type it directly into the prop it throws this error "value.ensureFunctionName is not a function"
   test("should change the value of the card", () => {
     const event = { target: { value: "Dragon Ball" } };
 
-    render(<AddCategory onNewCategory={func} />);
+    render(<Search onNewCategory={func} />);
     const input = screen.getByRole("textbox");
     fireEvent.input(input, event);
 
@@ -16,7 +16,7 @@ describe("AddCategory", () => {
     const inputValue = "Saitama";
     const onNewCategory = jest.fn();
 
-    render(<AddCategory onNewCategory={onNewCategory} />);
+    render(<Search onNewCategory={onNewCategory} />);
     const input = screen.getByRole("textbox");
     const form = screen.getByRole("form");
     fireEvent.input(input, { target: { value: inputValue } });
@@ -30,7 +30,7 @@ describe("AddCategory", () => {
   test("should NOT call onNewCategory if the input is empty", () => {
     const onNewCategory = jest.fn();
 
-    render(<AddCategory onNewCategory={onNewCategory} />);
+    render(<Search onNewCategory={onNewCategory} />);
     const form = screen.getByRole("form");
     fireEvent.submit(form);
 

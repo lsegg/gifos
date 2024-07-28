@@ -9,6 +9,7 @@ This is an interactive web application to share animated GIFs based on a practis
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language.
 - [Jest](https://jestjs.io/) - JavaScript Testing Framework.
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Sass](https://sass-lang.com/install) - Preprocessor scripting language
 - [Vite](https://vitejs.dev/) - Frontend build tool.
 
 ## Features 📋
