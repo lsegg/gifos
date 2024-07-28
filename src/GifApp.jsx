@@ -3,7 +3,7 @@ import AddCategory from "./components/AddCategory";
 import GifGrid from "./components/GifGrid";
 import Footer from "./components/Footer";
 
-export const GifApp = () => {
+const GifApp = () => {
   const [categories, setCategories] = useState(["One Punch"]);
 
   const handleAddCategory = (newCategory) => {
@@ -24,3 +24,5 @@ export const GifApp = () => {
     </>
   );
 };
+
+export default GifApp;
