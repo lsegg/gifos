@@ -1,4 +1,4 @@
-import header from "../assets/imgs/search-illustration.svg";
+import illustration from "../assets/imgs/search-illustration.svg";
 import search from "../assets/imgs/icon-search.svg";
 import { useState } from "react";
 import { PropTypes } from "prop-types";
@@ -27,7 +27,7 @@ const Search = ({ onNewCategory }) => {
           best <span className="Search-title-highlight">GIFOS</span>
         </span>
       </h1>
-      <img src={header} alt="illustration" className="Search-img" />
+      <img src={illustration} alt="illustration" className="Search-img" />
       <form
         className="Search-searchBar"
         onSubmit={handleSubmit}
