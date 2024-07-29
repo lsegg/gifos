@@ -104,21 +104,43 @@ body {
 }
 .Search-result {
   width: 40%;
+  height: 7.5rem;
+  position: relative;
   max-width: 16.25rem;
   margin-bottom: 1.5625rem;
 }
 .Search-result-gif {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16.25rem;
   height: 7.5rem;
 }
 .Search-result-gif-overlay {
   display: none;
-  width: 7.5rem;
-  height: 16.25rem;
-  background-color: hsl(253, 78%, 54%);
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16.25rem;
+  height: 7.5rem;
+  padding: 0.4375rem;
+  background-color: rgba(87, 46, 229, 0.6);
 }
-.Search-result-gif-overlay :hover {
-  display: block;
+.Search-result-gif-overlay-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.Search-result-gif-overlay-wrapper {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.Search-result:hover div {
+  display: flex;
 }
 .Search-trending {
   margin-top: 1.9375rem;

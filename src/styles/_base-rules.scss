@@ -12,12 +12,11 @@
 html {
   // Box model
   max-width: 100%;
-  // Typography
+
   font-size: $root-font-size; /* 1 rem = 16px */
 }
 
 body {
-  // Typography
   color: $color-dark;
   font-family: $font-primary;
 }

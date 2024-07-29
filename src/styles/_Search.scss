@@ -5,12 +5,12 @@
   flex-direction: column;
   // Box Model
   margin: 0 toRem(26px) 0 toRem(22px);
-  // Typography
+
   text-align: center;
   &-title {
     // Box Model
     margin-top: toRem(7px);
-    // Typography
+
     color: $color-primary;
     font-size: toRem(25px);
     font-weight: 700;
@@ -21,7 +21,6 @@
       display: inline-block;
     }
     &-highlight {
-      // Typography
       color: $color-secondary;
     }
   }
@@ -38,7 +37,7 @@
     // Box Model
     height: toRem(50px);
     width: 100%;
-    // Visual properties
+
     border: 1px solid $color-primary;
     border-radius: toRem(27px);
     &-img {
@@ -48,7 +47,7 @@
     &-input {
       // Box Model
       margin-left: toRem(55px);
-      // Typography
+
       color: $color-dark;
       font-family: $font-secondary;
       font-size: toRem(16px);
@@ -67,7 +66,7 @@
     &-title {
       // Box Model
       margin: toRem(40px) 0;
-      // Typography
+
       color: $color-primary;
       font-size: toRem(25px);
       font-weight: 700;
@@ -78,23 +77,47 @@
   &-result {
     // Box Model
     width: 40%;
+    height: toRem(120px);
+    position: relative;
     max-width: toRem(260px);
     margin-bottom: toRem(25px);
     &-gif {
+      // Layout
+      position: absolute;
+      top: 0;
+      left: 0;
       // Box Model
-      width: 100%;
+      width: toRem(260px);
       height: toRem(120px);
       &-overlay {
         // Layout
         display: none;
-        :hover {
-          display: block;
-        }
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
         // Box Model
-        width: toRem(120px);
-        height: toRem(260px);
-        // Visual properties
-        background-color: $color-primary;
+        width: toRem(260px);
+        height: toRem(120px);
+        padding: toRem(7px);
+        background-color: $color-primary-transparency;
+        &-title {
+          color: $color-light;
+          font-size: toRem(16px);
+          font-weight: 700;
+        }
+        &-wrapper {
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+        }
+      }
+    }
+    &:hover {
+      div {
+        display: flex;
       }
     }
   }

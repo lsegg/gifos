@@ -1,5 +1,6 @@
 import facebook from "../assets/imgs/icon-facebook.svg";
 import twitter from "../assets/imgs/icon-twitter.svg";
+import instagram from "../assets/imgs/icon-instagram.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,11 +11,7 @@ const Footer = () => {
         <span className="Footer-social-networks">
           <img src={facebook} alt="facebook" className="Footer-social-icon" />
           <img src={twitter} alt="twitter" className="Footer-social-icon" />
-          <img
-            src="assets/icon_instagram.svg"
-            alt=""
-            className="Footer-social-icon"
-          />
+          <img src={instagram} alt="instagram" className="Footer-social-icon" />
         </span>
       </div>
       <div className="Footer-copyright">
