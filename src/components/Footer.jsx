@@ -2,6 +2,7 @@ import facebook from "../assets/imgs/icon-facebook.svg";
 import twitter from "../assets/imgs/icon-twitter.svg";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="Footer">
       <div className="Footer-social">
@@ -17,7 +18,7 @@ const Footer = () => {
         </span>
       </div>
       <div className="Footer-copyright">
-        &copy; GIFOS 2024. All rights reserved.
+        &copy; GIFOS {currentYear}. All rights reserved.
       </div>
     </footer>
   );

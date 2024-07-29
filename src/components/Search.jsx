@@ -28,23 +28,26 @@ const Search = ({ onNewCategory }) => {
         </span>
       </h1>
       <img src={header} alt="illustration" className="Search-img" />
-      <div className="Search-searchBar">
-        <form onSubmit={handleSubmit} aria-label="search">
-          <label htmlFor="searchbar">
-            <input
-              type="text"
-              placeholder="search GIFs and more"
-              value={inputValue}
-              onChange={handleInputChange}
-            />
-          </label>
-          <img
-            src={search}
-            alt="gifos illustration"
-            className="Search-searchBar-img"
+      <form
+        className="Search-searchBar"
+        onSubmit={handleSubmit}
+        aria-label="search"
+      >
+        <label htmlFor="searchbar">
+          <input
+            type="text"
+            placeholder="Search GIFs and more"
+            value={inputValue}
+            onChange={handleInputChange}
+            className="Search-searchBar-input"
           />
-        </form>
-      </div>
+        </label>
+        <img
+          src={search}
+          alt="gifos illustration"
+          className="Search-searchBar-img"
+        />
+      </form>
       <div className="Search-trending">
         <h4 className="Search-trending-title">Trending&#58;</h4>
         <div className="Search-trending-topics"></div>

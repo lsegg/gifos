@@ -55,6 +55,49 @@
       text-align: left;
     }
   }
+  &-wrapper {
+    // Layout
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // Box Model
+    width: 100%;
+    max-width: 100%;
+    &-title {
+      // Box Model
+      margin: toRem(40px) 0;
+      // Typography
+      color: $color-primary;
+      font-size: toRem(25px);
+      font-weight: 700;
+      line-height: toRem(33px);
+      text-align: center;
+    }
+  }
+  &-result {
+    // Box Model
+    width: 40%;
+    max-width: toRem(260px);
+    margin-bottom: toRem(25px);
+    &-gif {
+      // Box Model
+      width: 100%;
+      height: toRem(120px);
+      &-overlay {
+        // Layout
+        display: none;
+        :hover {
+          display: block;
+        }
+        // Box Model
+        width: toRem(120px);
+        height: toRem(260px);
+        // Visual properties
+        background-color: $color-primary;
+      }
+    }
+  }
   &-trending {
     // Box Model
     margin-top: toRem(31px);
