@@ -1,6 +1,6 @@
 import facebook from "../assets/imgs/icon-facebook.svg";
 import twitter from "../assets/imgs/icon-twitter.svg";
-import instagram from "../assets/imgs/icon-instagram.svg";
+import instagram from "../assets/imgs/icon_instagram.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
