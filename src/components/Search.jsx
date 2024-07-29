@@ -1,4 +1,4 @@
-import illustration from "../assets/imgs/search-illustration.svg";
+import illustration from "../assets/imgs/ilustra_header.svg";
 import search from "../assets/imgs/icon-search.svg";
 import { useFetchTrending } from "../hooks/useFetchTrending";
 import { useState } from "react";

@@ -1,7 +1,7 @@
 import { PropTypes } from "prop-types";
 import favourite from "../assets/imgs/icon-fav.svg";
 import download from "../assets/imgs/icon-download.svg";
-import maximize from "../assets/imgs/icon-max.svg";
+import maximize from "../assets/imgs/icon-max-normal.svg";
 
 const GifItem = ({ title, url }) => {
   return (
