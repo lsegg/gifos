@@ -2,9 +2,11 @@ import { PropTypes } from "prop-types";
 
 const GifItem = ({ title, url }) => {
   return (
-    <div className="card">
-      <img src={url} alt={title} />
-      <p>{title}</p>
+    <div className="Search-result">
+      <img src={url} alt={title} className="Search-result-gif" />
+      <div className="Search-result-gif-overlay">
+        <p>{title}</p>
+      </div>
     </div>
   );
 };

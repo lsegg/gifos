@@ -1,0 +1,23 @@
+/* Cleaning some default styles */
+
+* {
+  // Box model
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General settings */
+html {
+  // Box model
+  max-width: 100%;
+  // Typography
+  font-size: $root-font-size; /* 1 rem = 16px */
+}
+
+body {
+  // Typography
+  color: $color-dark;
+  font-family: $font-primary;
+}

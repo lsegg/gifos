@@ -9,9 +9,32 @@ This is an interactive web application to share animated GIFs based on a practis
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language.
 - [Jest](https://jestjs.io/) - JavaScript Testing Framework.
 - [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Sass](https://sass-lang.com/install) - Preprocessor scripting language
 - [Vite](https://vitejs.dev/) - Frontend build tool.
 
 ## Features 📋
+
+- Mobile first.
+- Responsive views:
+  - mobile
+  - small tablets
+  - large tablets
+  - and desktop
+- Units criteria:
+  - _px_ for font root element and borders,
+  - _%_ and _rem_ for the rest.
+- Naming criteria:
+  - `.TitleCase` modules
+  - `-camelCase` elements
+  - `--camelCase` modifiers
+- Properties order criteria: grouped by type as follows -->
+  - Inheritance
+  - Layout
+  - Box Model
+  - Visual Properties
+  - Typography
+  - Animations
+  - Others
 
 ## Previews
 

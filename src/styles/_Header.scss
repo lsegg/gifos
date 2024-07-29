@@ -1,0 +1,35 @@
+.Header {
+  // Layout
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // Box Model
+  width: 100%;
+  // Visual properties
+  border-top: 5px solid $color-primary;
+  &-navbar {
+    // Layout
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    // Box Model
+    height: toRem(95px);
+    width: 100%;
+    &-logo-container {
+      // Box Model
+      margin-left: toRem(22px);
+    }
+    &-menu {
+      &-button {
+        // Box Model
+        margin-right: toRem(26px);
+      }
+      &-item {
+        // Layout
+        display: none; // temporary
+        // Visual properties
+        list-style: none;
+      }
+    }
+  }
+}

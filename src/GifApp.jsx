@@ -1,24 +1,27 @@
 import { useState } from "react";
-import AddCategory from "./components/AddCategory";
+import Header from "./components/Header";
+import Search from "./components/Search";
 import GifGrid from "./components/GifGrid";
+import Footer from "./components/Footer";
 
 const GifApp = () => {
   const [categories, setCategories] = useState(["One Punch"]);
 
-  const handleAddCategory = (newCategory) => {
+  const handleSearch = (newCategory) => {
     if (categories.includes(newCategory)) return;
     setCategories([newCategory, ...categories]);
   };
 
   return (
     <>
-      <h1>GifApp</h1>
-
-      <AddCategory onNewCategory={handleAddCategory} />
-
-      {categories.map((category) => (
-        <GifGrid key={category} category={category} />
-      ))}
+      <Header />
+      <main className="Main">
+        <Search onNewCategory={handleSearch} />
+        {categories.map((category) => (
+          <GifGrid key={category} category={category} />
+        ))}
+      </main>
+      <Footer />
     </>
   );
 };
