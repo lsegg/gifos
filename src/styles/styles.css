@@ -144,6 +144,8 @@ body {
 }
 .Search-trending {
   margin-top: 1.9375rem;
+  color: hsl(253, 78%, 54%);
+  text-align: center;
 }
 
 .Favourites {

@@ -1,4 +1,4 @@
-const VITE_GIPHY_API_KEY = "zM4AIGGgjSI9Y0dt8uMRODn1olAL2cKP"; // import.meta.env.VITE_GIPHY_API_KEY;
+const VITE_GIPHY_API_KEY = import.meta.env.VITE_GIPHY_API_KEY;
 const GIF_LIMIT = 10;
 
 export const searchGifs = async (category) => {

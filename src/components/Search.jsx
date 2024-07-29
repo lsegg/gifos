@@ -1,10 +1,12 @@
 import illustration from "../assets/imgs/search-illustration.svg";
 import search from "../assets/imgs/icon-search.svg";
+import { useFetchTrending } from "../hooks/useFetchTrending";
 import { useState } from "react";
 import { PropTypes } from "prop-types";
 
 const Search = ({ onNewCategory }) => {
   const [inputValue, setInputValue] = useState("");
+  const { topics } = useFetchTrending();
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -50,7 +52,7 @@ const Search = ({ onNewCategory }) => {
       </form>
       <div className="Search-trending">
         <h4 className="Search-trending-title">Trending&#58;</h4>
-        <div className="Search-trending-topics"></div>
+        <div className="Search-trending-topics">{topics}...</div>
       </div>
     </section>
   );

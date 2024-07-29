@@ -1,7 +1,6 @@
 /* Cleaning some default styles */
 
 * {
-  // Box model
   border: 0;
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +9,7 @@
 
 /* General settings */
 html {
-  // Box model
   max-width: 100%;
-
   font-size: $root-font-size; /* 1 rem = 16px */
 }
 

@@ -1,23 +1,17 @@
 .Search {
-  // Layout
   align-items: center;
   display: flex;
   flex-direction: column;
-  // Box Model
   margin: 0 toRem(26px) 0 toRem(22px);
-
   text-align: center;
   &-title {
-    // Box Model
     margin-top: toRem(7px);
-
     color: $color-primary;
     font-size: toRem(25px);
     font-weight: 700;
     line-height: toRem(33px);
     text-align: center;
     &-newLine {
-      // Layout
       display: inline-block;
     }
     &-highlight {
@@ -25,29 +19,22 @@
     }
   }
   &-img {
-    // Box Model
     margin-top: toRem(31px);
     width: toRem(273px);
   }
   &-searchBar {
-    // Layout
     align-items: center;
     display: flex;
     justify-content: space-between;
-    // Box Model
     height: toRem(50px);
     width: 100%;
-
     border: 1px solid $color-primary;
     border-radius: toRem(27px);
     &-img {
-      // Box Model
       margin-right: toRem(20px);
     }
     &-input {
-      // Box Model
       margin-left: toRem(55px);
-
       color: $color-dark;
       font-family: $font-secondary;
       font-size: toRem(16px);
@@ -55,18 +42,14 @@
     }
   }
   &-wrapper {
-    // Layout
     align-items: flex-start;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    // Box Model
     width: 100%;
     max-width: 100%;
     &-title {
-      // Box Model
       margin: toRem(40px) 0;
-
       color: $color-primary;
       font-size: toRem(25px);
       font-weight: 700;
@@ -75,29 +58,24 @@
     }
   }
   &-result {
-    // Box Model
     width: 40%;
     height: toRem(120px);
     position: relative;
     max-width: toRem(260px);
     margin-bottom: toRem(25px);
     &-gif {
-      // Layout
       position: absolute;
       top: 0;
       left: 0;
-      // Box Model
       width: toRem(260px);
       height: toRem(120px);
       &-overlay {
-        // Layout
         display: none;
         flex-direction: column;
         justify-content: space-between;
         position: absolute;
         top: 0;
         left: 0;
-        // Box Model
         width: toRem(260px);
         height: toRem(120px);
         padding: toRem(7px);
@@ -122,7 +100,8 @@
     }
   }
   &-trending {
-    // Box Model
     margin-top: toRem(31px);
+    color: $color-primary;
+    text-align: center;
   }
 }
