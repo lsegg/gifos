@@ -139,6 +139,9 @@ body {
   justify-content: space-between;
   width: 50%;
 }
+.Search-result-gif-overlay-wrapper-action {
+  z-index: 1;
+}
 .Search-result:hover div {
   display: flex;
 }
