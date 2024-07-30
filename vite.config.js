@@ -7,11 +7,14 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.svg"],
   logLevel: "info",
-  rollupOptions: {
-    output: {
-      entryFileNames: `[name]` + hash + `.js`,
-      chunkFileNames: `[name]` + hash + `.js`,
-      assetFileNames: `[name]` + hash + `.[ext]`,
+  build: {
+    outDir: "docs",
+    rollupOptions: {
+      output: {
+        entryFileNames: `[name]-${hash}.js`,
+        chunkFileNames: `[name]-${hash}.js`,
+        assetFileNames: `assets/[name]-${hash}` + `.[ext]`,
+      },
     },
   },
 });
