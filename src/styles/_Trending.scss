@@ -1,0 +1,23 @@
+.Trending {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $color-background;
+  padding: toRem(46px) 0 toRem(82px);
+  &-title {
+    margin-top: toRem(7px);
+    color: $color-primary;
+    font-size: toRem(20px);
+    font-weight: 700;
+    line-height: toRem(33px);
+    text-align: center;
+  }
+  &-gifs {
+    display: flex;
+    align-items: center;
+    &-carousel {
+      display: none;
+    }
+  }
+}

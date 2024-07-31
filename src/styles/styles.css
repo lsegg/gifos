@@ -79,6 +79,7 @@ body {
 }
 .Search-title-newLine {
   display: inline-block;
+  margin-left: 0.25rem;
 }
 .Search-title-highlight {
   color: hsl(167, 72%, 60%);
@@ -93,6 +94,7 @@ body {
   justify-content: space-between;
   height: 3.125rem;
   width: 100%;
+  max-width: 31.25rem;
   border: 1px solid hsl(253, 78%, 54%);
   border-radius: 1.6875rem;
 }
@@ -164,12 +166,42 @@ body {
   display: flex;
 }
 .Search-trending {
-  margin-top: 1.9375rem;
-  color: hsl(253, 78%, 54%);
+  margin: 1.9375rem 2.875rem;
   text-align: center;
+}
+.Search-trending-title {
+  color: hsl(253, 78%, 54%);
+  margin-bottom: 0.625rem;
+}
+.Search-trending-topics {
+  line-height: 1.5625rem;
 }
 
 .Favourites {
+  display: none;
+}
+
+.Trending {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(216, 26%, 96%);
+  padding: 2.875rem 0 5.125rem;
+}
+.Trending-title {
+  margin-top: 0.4375rem;
+  color: hsl(253, 78%, 54%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2.0625rem;
+  text-align: center;
+}
+.Trending-gifs {
+  display: flex;
+  align-items: center;
+}
+.Trending-gifs-carousel {
   display: none;
 }
 

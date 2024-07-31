@@ -1,7 +1,7 @@
-import { searchGifs } from "../../src/helpers/searchGifs";
-describe("searchGifs", () => {
+import { getGifs } from "../../src/helpers/getGifs";
+describe("getGifs", () => {
   test("should return a gif array", async () => {
-    const gifs = await searchGifs("One Punch");
+    const gifs = await getGifs("search", "One Punch");
 
     // FIXME: NOT WORKING BECAUSE OF ENV VARIABLE --> SyntaxError: Cannot use 'import.meta' outside a module
     expect(gifs.length).toBeGreaterThan(0);

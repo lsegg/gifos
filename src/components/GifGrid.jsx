@@ -11,7 +11,7 @@ const GifGrid = ({ category }) => {
       {isLoading && <h2>Loading...</h2>}
       <div className="Search-wrapper" key={category}>
         {gifs?.map((gif) => (
-          <GifItem key={gif.id} {...gif} />
+          <GifItem section="Search" key={gif.id} {...gif} />
         ))}
       </div>
     </>

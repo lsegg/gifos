@@ -13,6 +13,7 @@
     text-align: center;
     &-newLine {
       display: inline-block;
+      margin-left: toRem(4px);
     }
     &-highlight {
       color: $color-secondary;
@@ -28,6 +29,7 @@
     justify-content: space-between;
     height: toRem(50px);
     width: 100%;
+    max-width: toRem(500px);
     border: 1px solid $color-primary;
     border-radius: toRem(27px);
     &-img {
@@ -101,10 +103,14 @@
     }
   }
   &-trending {
-    margin-top: toRem(31px);
+    margin: toRem(31px) toRem(46px);
     text-align: center;
     &-title {
       color: $color-primary;
+      margin-bottom: toRem(10px);
+    }
+    &-topics {
+      line-height: toRem(25px);
     }
   }
 }
