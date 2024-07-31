@@ -4,22 +4,40 @@
   align-items: center;
   width: 100%;
   border-top: 5px solid $color-primary;
+  &-logo-container {
+    margin-left: toRem(22px);
+  }
   &-navbar {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: toRem(95px);
-    width: 100%;
-    &-logo-container {
-      margin-left: toRem(22px);
+    &-button {
+      margin-right: toRem(26px);
     }
     &-menu {
-      &-button {
-        margin-right: toRem(26px);
+      display: none;
+      &--isOpen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: toRem(95px);
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: toRem(16px);
+        background-color: $color-primary;
+        opacity: 0.9;
+        z-index: 1;
       }
       &-item {
-        display: none; // temporary
-        list-style: none;
+        width: toRem(115px);
+        color: $color-light;
+        font-weight: 700;
+        padding: toRem(16px);
+        text-decoration: none;
+        border-bottom: 1px solid $color-light;
       }
     }
   }
