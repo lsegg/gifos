@@ -1,0 +1,42 @@
+.GifItem {
+  height: toRem(120px);
+  position: relative;
+  width: toRem(220px);
+  overflow: hidden;
+  &-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    &-overlay {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: toRem(7px);
+      background-color: $color-primary-transparency;
+      &-title {
+        color: $color-light;
+        font-size: toRem(16px);
+        font-weight: 700;
+      }
+      &-wrapper {
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+      }
+    }
+  }
+  &:hover {
+    div {
+      display: flex;
+    }
+  }
+}

@@ -7,11 +7,11 @@ const GifGrid = ({ category }) => {
 
   return (
     <>
-      <h3 className="Search-wrapper-title">{category}</h3>
+      <h3 className="GifGrid-title">{category}</h3>
       {isLoading && <h2>Loading...</h2>}
-      <div className="Search-wrapper" key={category}>
+      <div className="GifGrid" key={category}>
         {gifs?.map((gif) => (
-          <GifItem section="Search" key={gif.id} {...gif} />
+          <GifItem key={gif.id} {...gif} />
         ))}
       </div>
     </>

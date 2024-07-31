@@ -13,11 +13,26 @@
     line-height: toRem(33px);
     text-align: center;
   }
+  &-description {
+    margin: 20px 0;
+  }
   &-gifs {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 toRem(40px);
     &-carousel {
-      display: none;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: toRem(25px);
+      min-width: toRem(220px);
+      width: 75%;
+      overflow: hidden;
+      max-height: toRem(120px);
     }
   }
 }

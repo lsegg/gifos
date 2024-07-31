@@ -16,8 +16,8 @@ const Trending = () => {
           <img src={sliderLeft} alt="carousel-button" />
         </button>
         <div className="Trending-gifs-carousel">
-          {gifs.map(({ id, title, url }) => (
-            <GifItem section="Trending" key={id} title={title} url={url} />
+          {gifs?.map(({ id, title, url }) => (
+            <GifItem key={id} title={title} url={url} />
           ))}
         </div>
         <button className="Trending-gifs-arrow">

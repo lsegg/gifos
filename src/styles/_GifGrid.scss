@@ -1,0 +1,19 @@
+.GifGrid {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: toRem(5px);
+  row-gap: toRem(20px);
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: toRem(25px);
+  &-title {
+    margin: toRem(40px) 0;
+    color: $color-primary;
+    font-size: toRem(25px);
+    font-weight: 700;
+    line-height: toRem(33px);
+    text-align: center;
+  }
+}

@@ -108,63 +108,6 @@ body {
   font-size: 1rem;
   text-align: left;
 }
-.Search-wrapper {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
-}
-.Search-wrapper-title {
-  margin: 2.5rem 0;
-  color: hsl(253, 78%, 54%);
-  font-size: 1.5625rem;
-  font-weight: 700;
-  line-height: 2.0625rem;
-  text-align: center;
-}
-.Search-result {
-  width: 40%;
-  height: 7.5rem;
-  position: relative;
-  max-width: 16.25rem;
-  margin-bottom: 1.5625rem;
-  overflow-y: hidden;
-}
-.Search-result-gif {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  width: 100%;
-}
-.Search-result-gif-overlay {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0.4375rem;
-  background-color: rgba(87, 46, 229, 0.6);
-}
-.Search-result-gif-overlay-title {
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  font-weight: 700;
-}
-.Search-result-gif-overlay-wrapper {
-  align-self: flex-end;
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-.Search-result:hover div {
-  display: flex;
-}
 .Search-trending {
   margin: 1.9375rem 2.875rem;
   text-align: center;
@@ -197,12 +140,90 @@ body {
   line-height: 2.0625rem;
   text-align: center;
 }
+.Trending-description {
+  margin: 20px 0;
+}
 .Trending-gifs {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 2.5rem;
 }
 .Trending-gifs-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 1.5625rem;
+       column-gap: 1.5625rem;
+  min-width: 13.75rem;
+  width: 75%;
+  overflow: hidden;
+  max-height: 7.5rem;
+}
+
+.GifGrid {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  -moz-column-gap: 0.3125rem;
+       column-gap: 0.3125rem;
+  row-gap: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5625rem;
+}
+.GifGrid-title {
+  margin: 2.5rem 0;
+  color: hsl(253, 78%, 54%);
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.0625rem;
+  text-align: center;
+}
+
+.GifItem {
+  height: 7.5rem;
+  position: relative;
+  width: 13.75rem;
+  overflow: hidden;
+}
+.GifItem-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+.GifItem-gif-overlay {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.4375rem;
+  background-color: rgba(87, 46, 229, 0.6);
+}
+.GifItem-gif-overlay-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.GifItem-gif-overlay-wrapper {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.GifItem:hover div {
+  display: flex;
 }
 
 .Footer {
@@ -229,7 +250,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 8.75rem;
+  max-width: 7.5rem;
 }
 .Footer-social-icon {
   margin: 0 0.625rem 0;

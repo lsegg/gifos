@@ -43,65 +43,6 @@
       text-align: left;
     }
   }
-  &-wrapper {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 100%;
-    &-title {
-      margin: toRem(40px) 0;
-      color: $color-primary;
-      font-size: toRem(25px);
-      font-weight: 700;
-      line-height: toRem(33px);
-      text-align: center;
-    }
-  }
-  &-result {
-    width: 40%;
-    height: toRem(120px);
-    position: relative;
-    max-width: toRem(260px);
-    margin-bottom: toRem(25px);
-    overflow-y: hidden;
-    &-gif {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      width: 100%;
-      &-overlay {
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: toRem(7px);
-        background-color: $color-primary-transparency;
-        &-title {
-          color: $color-light;
-          font-size: toRem(16px);
-          font-weight: 700;
-        }
-        &-wrapper {
-          align-self: flex-end;
-          display: flex;
-          justify-content: space-between;
-          width: 50%;
-        }
-      }
-    }
-    &:hover {
-      div {
-        display: flex;
-      }
-    }
-  }
   &-trending {
     margin: toRem(31px) toRem(46px);
     text-align: center;
