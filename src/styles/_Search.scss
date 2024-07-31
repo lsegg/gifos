@@ -102,7 +102,9 @@
   }
   &-trending {
     margin-top: toRem(31px);
-    color: $color-primary;
     text-align: center;
+    &-title {
+      color: $color-primary;
+    }
   }
 }

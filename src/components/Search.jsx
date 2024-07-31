@@ -51,7 +51,7 @@ const Search = ({ onNewCategory }) => {
         />
       </form>
       <div className="Search-trending">
-        <h4 className="Search-trending-title">Trending&#58;</h4>
+        <h4 className="Search-trending-title">Trending topics&#58;</h4>
         <div className="Search-trending-topics">{topics}...</div>
       </div>
     </section>
