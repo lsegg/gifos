@@ -1,7 +1,7 @@
 .GifItem {
   height: toRem(120px);
   position: relative;
-  width: toRem(220px);
+  width: 40%;
   overflow: hidden;
   &-gif {
     position: absolute;
@@ -38,5 +38,9 @@
     div {
       display: flex;
     }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: toRem(220px);
   }
 }

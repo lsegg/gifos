@@ -188,7 +188,7 @@ body {
 .GifItem {
   height: 7.5rem;
   position: relative;
-  width: 13.75rem;
+  width: 40%;
   overflow: hidden;
 }
 .GifItem-gif {
@@ -225,6 +225,11 @@ body {
 .GifItem:hover div {
   display: flex;
 }
+@media screen and (min-width: 90rem) {
+  .GifItem {
+    width: 13.75rem;
+  }
+}
 
 .Footer {
   display: flex;
@@ -234,6 +239,7 @@ body {
   position: relative;
   bottom: 0px;
   width: 100%;
+  padding-top: 40px;
   border-bottom: 5px solid hsl(253, 78%, 54%);
 }
 .Footer-social {
@@ -248,7 +254,6 @@ body {
 .Footer-social-network {
   display: flex;
   align-items: center;
-  display: flex;
   justify-content: space-between;
   max-width: 7.5rem;
 }

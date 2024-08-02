@@ -6,6 +6,7 @@
   position: relative;
   bottom: 0px;
   width: 100%;
+  padding-top: 40px;
   border-bottom: 5px solid $color-primary;
   &-social {
     display: flex;
@@ -18,7 +19,6 @@
     &-network {
       display: flex;
       align-items: center;
-      display: flex;
       justify-content: space-between;
       max-width: toRem(120px);
     }
