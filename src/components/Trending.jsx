@@ -1,6 +1,6 @@
 import GifItem from "../components/GifItem";
-import sliderLeft from "../assets/imgs/button-slider-left.svg";
-import sliderRight from "../assets/imgs/Button-Slider-right.svg";
+import GifAction from "./GifAction";
+
 import { useFetchTrending } from "../hooks/useFetchTrending";
 const Trending = () => {
   const { gifs } = useFetchTrending();
@@ -12,17 +12,13 @@ const Trending = () => {
         Check out the latest GIFOS from our community.
       </p>
       <div className="Trending-gifs">
-        <button className="Trending-gifs-arrow">
-          <img src={sliderLeft} alt="carousel-button" />
-        </button>
+        <GifAction action="sliderLeft" />
         <div className="Trending-gifs-carousel">
           {gifs?.map(({ id, title, url }) => (
             <GifItem key={id} title={title} url={url} />
           ))}
         </div>
-        <button className="Trending-gifs-arrow">
-          <img src={sliderRight} alt="carousel-button" />
-        </button>
+        <GifAction action="sliderRight" />
       </div>
     </section>
   );
